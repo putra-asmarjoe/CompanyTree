@@ -45,7 +45,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Set up database
-#### Create the MySQL database `CompanyTree` and grant necessary permissions to the user specified in your .env file (MYSQL_USER).
+Create the MySQL database `CompanyTree` and grant necessary permissions to the user specified in your .env file (MYSQL_USER).
 
 
 ### 4. Set up environment variables
@@ -58,7 +58,7 @@ MYSQL_USER=root
 MYSQL_PASSWORD=password
 MYSQL_DATABASE=CompanyTree
 ```
-##### Make sure to adjust MYSQL_USER and MYSQL_PASSWORD to match your MySQL credentials.
+Make sure to adjust MYSQL_USER and MYSQL_PASSWORD to match your MySQL credentials.
 
 ## Usage
 
