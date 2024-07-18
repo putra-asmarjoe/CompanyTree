@@ -8,11 +8,26 @@ This Python script main.py is designed to parse XML data from company.xml and ma
 ## Database Schema
 ![Schema](SS/db-chema.png)
 
+## All Tables
+![Schema](SS/all-ables.png)
+
+## Table departments
+![Schema](SS/departments.png)
+
+## Tables employees
+![Schema](SS/employees.png)
+
+## Tables projects
+![Schema](SS/projects.png)
+
+## Tables project_team
+![Schema](SS/project_team.png)
+
 
 ## Requirements
--Python 3.x
--MySQL Server
--pip package manager
+- Python 3.x
+- MySQL Server
+- pip package manager
 
 ## Installation
 
@@ -29,7 +44,11 @@ This Python script main.py is designed to parse XML data from company.xml and ma
 pip install -r requirements.txt
 ```
 
-### 3. Set up environment variables
+### 3. Set up database
+#### Create the MySQL database `CompanyTree` and grant necessary permissions to the user specified in your .env file (MYSQL_USER).
+
+
+### 4. Set up environment variables
 #### Create a `.env` file in the root directory with the following variables:
 
 ```makefile
@@ -39,7 +58,7 @@ MYSQL_USER=root
 MYSQL_PASSWORD=password
 MYSQL_DATABASE=CompanyTree
 ```
-
+##### Make sure to adjust MYSQL_USER and MYSQL_PASSWORD to match your MySQL credentials.
 
 ## Usage
 
@@ -52,7 +71,7 @@ python main.py
 ```
 
 ### Run with Docker Compose
- #### Alternatively, you can use Docker Compose to run both the frontend and backend services, along with a PostgreSQL database, in a single command:
+ #### Alternatively, you can use Docker Compose to run in a single command:
  ```bash
  docker-compose -f docker-compose.yml up -d --build
  ```
