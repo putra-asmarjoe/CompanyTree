@@ -40,6 +40,7 @@ def create_tables(cursor):
 
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS project_team (
+        id INT AUTO_INCREMENT PRIMARY KEY,
         project_fk VARCHAR(10),
         employee_fk VARCHAR(10),
         role VARCHAR(100),
