@@ -14,13 +14,13 @@ This Python script main.py is designed to parse XML data from company.xml and ma
 ## Table departments
 ![Schema](SS/departments.png)
 
-## Tables employees
+## Table employees
 ![Schema](SS/employees.png)
 
-## Tables projects
+## Table projects
 ![Schema](SS/projects.png)
 
-## Tables project_team
+## Table project_team
 ![Schema](SS/project_team.png)
 
 
