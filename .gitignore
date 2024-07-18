@@ -1,0 +1,12 @@
+.DS_Store
+.trunk
+.vscode
+venv/
+.env
+.env-dev
+.env
+.env-staging
+.env-stage
+.env-prod
+.env-production
+__pycache__/

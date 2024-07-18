@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <departments>
+        <department id="d1">
+            <name>Engineering</name>
+            <employees>
+                <employee id="e1">
+                    <name>Jane Doe</name>
+                    <position>Software Engineer</position>
+                    <salary currency="USD">85000</salary>
+                    <hire_date>2018-03-12</hire_date>
+                    <contact>
+                        <email>jane.doe@example.com</email>
+                        <phone type="work">555-1234</phone>
+                    </contact>
+                </employee>
+                <employee id="e2">
+                    <name>John Smith</name>
+                    <position>DevOps Engineer</position>
+                    <salary currency="USD">90000</salary>
+                    <hire_date>2017-08-21</hire_date>
+                    <contact>
+                        <email>john.smith@example.com</email>
+                        <phone type="work">555-5678</phone>
+                        <phone type="mobile">555-8765</phone>
+                    </contact>
+                </employee>
+            </employees>
+        </department>
+        <department id="d2">
+            <name>Marketing</name>
+            <employees>
+                <employee id="e3">
+                    <name>Emily Johnson</name>
+                    <position>Marketing Manager</position>
+                    <salary currency="USD">78000</salary>
+                    <hire_date>2019-05-10</hire_date>
+                    <contact>
+                        <email>emily.johnson@example.com</email>
+                        <phone type="work">555-2345</phone>
+                    </contact>
+                </employee>
+                <employee id="e4">
+                    <name>Michael Brown</name>
+                    <position>Content Strategist</position>
+                    <salary currency="USD">72000</salary>
+                    <hire_date>2020-02-17</hire_date>
+                    <contact>
+                        <email>michael.brown@example.com</email>
+                        <phone type="work">555-6789</phone>
+                    </contact>
+                </employee>
+            </employees>
+        </department>
+    </departments>
+    <projects>
+        <project id="p1">
+            <name>Project Alpha</name>
+            <start_date>2023-01-01</start_date>
+            <end_date>2023-12-31</end_date>
+            <team>
+                <member employee_id="e1" role="Lead Developer"/>
+                <member employee_id="e2" role="DevOps Specialist"/>
+                <member employee_id="e3" role="Marketing Liaison"/>
+            </team>
+        </project>
+        <project id="p2">
+            <name>Project Beta</name>
+            <start_date>2023-06-01</start_date>
+            <end_date>2024-05-31</end_date>
+            <team>
+                <member employee_id="e2" role="Project Manager"/>
+                <member employee_id="e4" role="Content Specialist"/>
+            </team>
+        </project>
+    </projects>
+</company>

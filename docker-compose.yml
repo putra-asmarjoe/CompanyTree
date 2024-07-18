@@ -1,0 +1,25 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: fBxCghk9e0
+      MYSQL_DATABASE: CompanyTree
+    depends_on:
+      - mysql
+    # prevent container close after excetion main task
+    command: bash -c "python main.py && tail -f /dev/null"
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: fBxCghk9e0
+      MYSQL_DATABASE: CompanyTree
+    # open alternative port for accessing by phpmyadmin
+    ports:
+      - "3307:3306"
